@@ -20,7 +20,7 @@ input,button{
   font-family: inherit;
   font-size: inherit;
 }
-button{
+button, input[type="submit"]{
   background:none;
   cursor: pointer;
 }
@@ -31,4 +31,8 @@ input:focus,button:focus{
 
 ul, li{
   list-style: none;
+}
+img{
+  display: block;
+  max-width: 100%;
 }
