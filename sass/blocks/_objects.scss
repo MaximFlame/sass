@@ -3,12 +3,13 @@
   padding-bottom: 45px;
 }
 
-
-
 .object_row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  @media (max-width: 1495px){
+    justify-content: flex-end;
+  }
 }
 
 .object_img {
@@ -18,8 +19,13 @@
 }
 
 .object_text {
-  max-width: 543px;
+  width: 374px;
+  padding-right: 150px;
   padding-left: 181px;
+  box-sizing: content-box;
+
+  flex-shrink: 0;
+
 
   p + p{
     margin-top: 20px;

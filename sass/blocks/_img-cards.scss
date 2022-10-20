@@ -1,4 +1,6 @@
 .img-card {
+  position: relative;
+  width: 385px;
   &+& {
     margin-left: 32px;
   }
@@ -10,4 +12,9 @@
   .img-card--rouder & {
     border-radius: 20px;
   }
+}
+.img-card_info{
+  position: absolute;
+  right: -46px;
+  bottom: 87px;
 }
