@@ -187,6 +187,7 @@ html, body {
   display: block;
   width: 24px;
   height: 19px;
+  background-image: url("./../icons/mail.svg");
   background-size: initial;
 }
 
@@ -244,12 +245,16 @@ html, body {
 }
 .button-play::before {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   content: " ";
   display: block;
   width: 12px;
   height: 12px;
+  background-image: url("./../icons/play.svg");
+  background-repeat: no-repeat;
 }
 
 .clients {
@@ -341,7 +346,7 @@ html, body {
 }
 
 .img-cards_img {
-  border-radius: 20px 20px 0px 20px;
+  border-radius: 20px 20px 0 20px;
 }
 .img-card--rouder .img-cards_img {
   border-radius: 20px;
@@ -387,13 +392,12 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   border-radius: 20px;
   background-color: #58BEBF;
   color: #FFFFFF;
-  padding-right: 95px;
 }
 
 .cta_img {
@@ -405,7 +409,22 @@ html, body {
 }
 
 .cta_text {
-  width: 364px;
+  background: url("./../img/cta/oval-bottom-left.svg") bottom Left -186px no-repeat, url("./../img/cta/oval-top-right.svg") right top no-repeat;
+  width: 555px;
+  padding-left: 95px;
+  padding-right: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .cta_text p {
   width: 320px;
@@ -423,4 +442,78 @@ html, body {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+
+.serve {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F5F6FA;
+}
+
+.serve_heading {
+  margin-bottom: 45px;
+  text-align: center;
+}
+.serve_heading .title {
+  margin-bottom: 10px;
+}
+
+.serve_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.card-customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 88px 40px 88px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 40px 52px -22px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 40px 52px -22px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.card-customer_icon {
+  fill: #F78434;
+  -webkit-transition: fill 0.2s ease-in;
+  transition: fill 0.2s ease-in;
+  margin-bottom: 15px;
+}
+.card-customer:hover {
+  background-color: #F78434;
+  color: #FFFFFF;
+}
+.card-customer:hover .card-customer_icon {
+  fill: #FFFFFF;
+}
+.card-customer:hover .button {
+  background-color: #FFFFFF;
+  color: #F78434;
+}
+
+.card-customer_text {
+  margin-bottom: 25px;
 }
