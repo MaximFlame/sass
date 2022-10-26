@@ -67,5 +67,10 @@
 }
 
 .card-testimonial_city {
-  color:#F78434;
+  color:#58BEBF;
+  transition: color 0.2s ease-in ;
+
+  .card-testimonial:hover & {
+    color:#F78434;
+  }
 }
